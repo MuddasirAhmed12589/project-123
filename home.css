@@ -1,0 +1,142 @@
+
+body {
+    background-color: #181818;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2e2e2e;
+    padding-top: 5px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+.navbar ul{
+    background-color: #2e2e2e;
+    list-style-type: none;
+    padding: 0px;
+    overflow: hidden;
+    margin: 0px;
+}
+.navbar a{
+    text-decoration: none;
+    margin-top :0px;
+    margin-left:  0px;
+    padding-top: 11px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size :19px;
+    color:white;
+}
+.navbar a:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.05s;
+}
+.navbar li{
+    float: left;
+    color:white;
+    margin-left: 27px;
+}
+.nav1{
+    background-color:#181818;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    padding-top: 30px;
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+}
+
+.featured-products {
+    padding-bottom: 50px;
+    padding-left :50px;
+    padding-right: 50px;
+    padding-top: 0px;
+}
+.featured-products h2{
+    margin-bottom: 50px;
+    font-size: 33px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.product {
+    text-align: center;
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.product:hover{
+    transform: scale(1.1);
+    transition: 0.5s all ease-in-out;
+}
+.product:not(:hover){
+    transition: 0.3s all ease-in-out;
+}
+.product img {
+    max-width: 300px;
+    width: 100% ;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #242424;
+    padding: 15px 0;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #317b33;
+}
+
+

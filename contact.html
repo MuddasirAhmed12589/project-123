@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclipse Gear</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1>Eclipse Gear</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li class="nav1"><a href="home.html">Home</a></li>
+            <li class="nav2"><a href="products.html">Products</a></li>
+            <li class="nav3"><a href="contact.html">Contact</a></li>
+            <li class="nav4"><a href="about.html">About us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to get in touch with us. We're here to help!</p>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message" rows="6" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contact-method">Preferred Contact Method</label>
+                    <select id="contact-method" name="contact-method">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Gaming Gear Hub</p>
+    </footer>
+</body>
+</html>

@@ -1,4 +1,3 @@
-
 body {
     background-color: #181818;
     color: #fff;
@@ -87,7 +86,6 @@ header {
     border-radius: 10px;
     font-size: large;
     color: #ffffff;
-
 }
 .hero {
     display: flex;

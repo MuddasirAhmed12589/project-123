@@ -8,7 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('image-asset.jpeg')no-repeat;
+    background: url('1.jpeg')no-repeat;
     background-size: cover;
 }
 @keyframes login{
@@ -35,7 +35,7 @@ body{
         opacity: 50%;
     
 
-    animation-name: login;
+    animation-name:login;
     animation-duration: 1s;
     animation-delay: 0.1s;
     animation-timing-function:ease-out;

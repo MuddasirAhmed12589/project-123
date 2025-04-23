@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 220px;
+            margin: 15px;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .price {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+        }
+        .discount {
+            font-size: 14px;
+            color: red;
+            text-decoration: line-through;
+        }
+        .discount-price {
+            font-size: 18px;
+            color: green;
+            font-weight: bold;
+        }
+        .offer-badge {
+            background-color: #ff9900;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .add-to-cart {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .add-to-cart:hover {
+            background-color: #0056b3;
+        }
+        .cart-count {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cart-count" id="cartCount">0</div>
+
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="product-card" id="product1">
+            <div class="offer-badge">20% OFF</div>
+                <span class="discount">$50.00</span>
+                <span class="discount-price">$40.00</span>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('product1')">Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" id="product2">
+            <img src="https://via.placeholder.com/200x200" alt="Product Image">
+            <div class="product-name">Product 2</div>
+            <div class="price">$30.00</div>
+            <button class="add-to-cart" onclick="addToCart('product2')">Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" id="product3">
+            <div class="offer-badge">15% OFF</div>
+            <img src="https://via.placeholder.com/200x200" alt="Product Image">
+            <div class="product-name">Product 3</div>
+            <div class="price">
+                <span class="discount">$60.00</span>
+                <span class="discount-price">$51.00</span>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('product3')">Add to Cart</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" id="product4">
+            <img src="https://via.placeholder.com/200x200" alt="Product Image">
+            <div class="product-name">Product 4</div>
+            <div class="price">$25.00</div>
+            <button class="add-to-cart" onclick="addToCart('product4')">Add to Cart</button>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card" id="product5">
+            <div class="offer-badge">Buy 1 Get 1 Free</div>
+            <img src="https://via.placeholder.com/200x200" alt="Product Image">
+            <div class="product-name">Product 5</div>
+            <div class="price">$15.00</div>
+            <button class="add-to-cart" onclick="addToCart('product5')">Add to Cart</button>
+        </div>
+    </div>
+
+    <script>
+        let cartCount = 0;
+
+        function addToCart(productId) {
+            // Increase the cart count
+            cartCount++;
+            // Update the cart count display
+            document.getElementById("cartCount").innerText = cartCount;
+
+            // Provide feedback to the user
+            alert('Added ' + productId + ' to cart.');
+        }
+    </script>
+
+</body>
+</html>
